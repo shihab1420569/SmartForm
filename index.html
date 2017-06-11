@@ -5,6 +5,7 @@
   <title>SmartForm</title>
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <div class="jumbotron" id="welcome">
       <h1>Welcome to SmartForm!</h1>
       <p>Front-end Technology Survey</p>
-      <p><button class="btn btn-primary btn-lg">Start Survey</button></p>
+      <p><button id ="startButton"class="btn btn-primary btn-lg">Start Survey</button></p>
     </div>
     <!-- Welcome END -->
     <!-- Question 1 -->
@@ -27,7 +28,7 @@
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
         </div>
-        <button class="btn btn-success">Next</button>
+        <button id="question2ButtonNext"class="btn btn-success">Next</button>
       </div>
     </div>
     <!-- Question 1 END -->
@@ -35,9 +36,9 @@
     <div class="row jumbotron" id="q2">
       <div class="col-sm-10 q2">
         <h2>Choose a front-end technology</h2>
-        <button class="btn btn-lg btn-warning">HTML</button>
-        <button class="btn btn-lg btn-danger">CSS</button>
-        <button class="btn btn-lg btn-info">JavaScript</button>
+        <button id ="Htmlbutton"  class="btn btn-lg btn-warning">HTML</button>
+        <button id ="Cssbutton"   class="btn btn-lg btn-danger">CSS</button>
+        <button id ="Jsbutton"    class="btn btn-lg btn-info">JavaScript</button>
       </div>
     </div>
     <!-- Question 2 END -->
@@ -89,8 +90,8 @@
         </label>
         </div>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id="Htmlprev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id="Htmlnext"class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
@@ -101,17 +102,17 @@
         <p>What do you <strong>like</strong> about CSS?</p>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Syntax is easy to learn
+          <input name="likesCSS" type="checkbox"> Syntax is easy to learn
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Can be used as an art tool
+          <input name="likesCSS" type="checkbox"> Can be used as an art tool
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Enables creativity in web design
+          <input name="likesCSS" type="checkbox"> Enables creativity in web design
         </label>
         </div>
       </div>
@@ -119,27 +120,27 @@
         <p>What do you <strong>dislike</strong> about CSS?</p>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Difficult to learn
+          <input name="likesCSS" type="checkbox"> Difficult to learn
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Debugging is a nightmare
+          <input name="likesCSS" type="checkbox"> Debugging is a nightmare
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Conflicts can be very confusing
+          <input name="likesCSS" type="checkbox"> Conflicts can be very confusing
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Code is messy
+          <input name="likesCSS" type="checkbox"> Code is messy
         </label>
         </div>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id="Cssprev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id="Cssnext" class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
@@ -150,22 +151,22 @@
         <p>What do you <strong>like</strong> about JavaScript?</p>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Easy to learn
+          <input name="likesJS" type="checkbox"> Easy to learn
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Multple programming styles supported
+          <input name="likesJS" type="checkbox"> Multple programming styles supported
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Just code and run easily in the browser
+          <input name="likesJS" type="checkbox"> Just code and run easily in the browser
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Huge growing community and plenty of resources online
+          <input name="likesJS" type="checkbox"> Huge growing community and plenty of resources online
         </label>
         </div>
       </div>
@@ -173,27 +174,27 @@
         <p>What do you <strong>dislike</strong> about JavaScript?</p>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Difficult to learn
+          <input name="likesJS" type="checkbox"> Difficult to learn
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Multple programming paradigms supported (too many options)
+          <input name="likesJS" type="checkbox"> Multple programming paradigms supported (too many options)
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Easy to right messy code
+          <input name="likesJS" type="checkbox"> Easy to right messy code
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> No multi threading
+          <input name="likesJS" type="checkbox"> No multi threading
         </label>
         </div>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id="Jsprev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id="Jsnext" class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
@@ -246,8 +247,8 @@
           <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Expert"> Expert
         </label>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id= "q3prev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id= "q3next"class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
@@ -264,7 +265,6 @@
     -
     -->
   </div>
-
   <script type="text/javascript" src="vendor/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="smartForm.js"></script>
 </body>
