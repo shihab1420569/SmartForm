@@ -6,6 +6,13 @@
 .btnRight{
   float:right;
 }
+
 #q1, #q2, #q2a, #q2b, #q2c, #q3, #thanks{
-  display:none;
+  display: none;
+}
+
+#show{
+  background-color: #eee;
+  font-size: 15px;
+  font-style: oblique;
 }
